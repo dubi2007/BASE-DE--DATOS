@@ -82,8 +82,78 @@ VALUES (26, 'Ucayali');`,
 SET TELEFONO = '987654321' 
 WHERE IDENTIFICADOR = 1;`,
     result: "Actualiza el número de teléfono del empleado con ID 1",
-    tables: ["EMPLEADO"],
+    tables: ["TODAS"],
     iframe: "https://drive.google.com/file/d/1YqJ-nynmMByE2j9_IGhd-mIHt4INg3Qi/preview"
+  },
+
+
+   {
+    id: "CONSULTA-TODOS",
+    title: "CONSULTA - TODOS",
+    description: "CONSULTA DE INFORMACIÓN COMPLETA DE PRODUCTOS",
+    category: "Operaciones DML",
+    complexity: "Básico",
+    sql: `-- Muestra todos los productos con sus atributos, inventario y categorización
+
+SELECT 
+    p.IDENTIFICADOR AS PRODUCTO_ID,
+    p.CODIGO,
+    p.NOMBRE AS PRODUCTO,
+    p.PRECIO,
+    p.ESTADO AS ESTADO_PRODUCTO,
+    
+    -- Categorización
+    cat.NOMBRE AS CATEGORIA,
+    subcat.NOMBRE AS SUBCATEGORIA,
+    
+    -- Atributos
+    col.NOMBRE AS COLOR,
+    mat.NOMBRE AS MATERIAL,
+    med.NOMBRE AS MEDIDA,
+    
+    -- Inventario
+    s.NOMBRE AS SUCURSAL,
+    inv.STOCK_ACTUAL,
+    inv.STOCK_MINIMO,
+    inv.STOCK_MAXIMO,
+    ubi.ZONA || '-' || ubi.PASILLO || '-' || ubi.ESTANTE || '-' || ubi.NIVEL || '-' || ubi.POSICION AS UBICACION,
+    
+    -- Ventas
+    NVL(ventas_stats.TOTAL_VENDIDO, 0) AS TOTAL_VENDIDO,
+    NVL(ventas_stats.CANTIDAD_VENTAS, 0) AS NUMERO_VENTAS
+
+FROM PRODUCTO p
+    INNER JOIN CATEGORIA_PRODUCTO cat ON p.CATEGORIA = cat.IDENTIFICADOR
+    INNER JOIN SUBCATEGORIA_PRODUCTO subcat ON p.SUBCATEGORIA = subcat.IDENTIFICADOR
+    
+    -- Atributos del producto
+    LEFT JOIN PRODUCTO_ATRIBUTO pa ON p.IDENTIFICADOR = pa.PRODUCTO
+    LEFT JOIN COLOR_PRODUCTO col ON pa.COLOR = col.IDENTIFICADOR
+    LEFT JOIN MATERIAL_PRODUCTO mat ON pa.MATERIAL = mat.IDENTIFICADOR
+    LEFT JOIN MEDIDA_PRODUCTO med ON pa.MEDIDA = med.IDENTIFICADOR
+    
+    -- Inventario
+    LEFT JOIN INVENTARIO_PRODUCTO ip ON p.IDENTIFICADOR = ip.PRODUCTO
+    LEFT JOIN INVENTARIO inv ON ip.INVENTARIO = inv.IDENTIFICADOR
+    LEFT JOIN UBICACION_INVENTARIO ubi ON inv.UBICACION = ubi.IDENTIFICADOR
+    LEFT JOIN SUCURSAL s ON inv.SUCURSAL = s.IDENTIFICADOR
+    
+    -- Estadísticas de ventas
+    LEFT JOIN (
+        SELECT 
+            dv.PRODUCTO,
+            SUM(dv.CANTIDAD) AS TOTAL_VENDIDO,
+            COUNT(DISTINCT dv.VENTA) AS CANTIDAD_VENTAS
+        FROM DETALLE_VENTA dv
+        GROUP BY dv.PRODUCTO
+    ) ventas_stats ON p.IDENTIFICADOR = ventas_stats.PRODUCTO
+
+ORDER BY cat.NOMBRE, subcat.NOMBRE, p.NOMBRE;
+
+-- ========================================`,
+    result: "Actualiza el número de teléfono del empleado con ID 1",
+    tables: ["EMPLEADO"],
+    iframe: "https://drive.google.com/file/d/1P2dZ8k49IF0m7I-yk9LrlK3iZTUkmr-k/preview"
   }
 ]
 

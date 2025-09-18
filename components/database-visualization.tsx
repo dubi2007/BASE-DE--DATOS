@@ -29,14 +29,14 @@ export function DatabaseVisualization() {
           <CardHeader className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 border-b border-purple-200 dark:border-purple-800">
             <CardTitle className="flex items-center space-x-3 text-2xl">
               <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center text-white text-xl shadow-lg">
-                📊
+                DC
               </div>
               <span className="bg-gradient-to-r from-slate-900 to-purple-900 dark:from-slate-100 dark:to-purple-100 bg-clip-text text-transparent">
                 Diagrama ER Completo
               </span>
             </CardTitle>
             <CardDescription className="text-lg text-slate-600 dark:text-slate-400 ml-13">
-              Visualización interactiva de la estructura completa de la base de datos con navegación avanzada
+              Visualización  de la estructura completa de la base de datos 
             </CardDescription>
           </CardHeader>
           <CardContent className="p-8">
@@ -113,7 +113,7 @@ export function DatabaseVisualization() {
             <CardHeader className="pb-4">
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-white text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  🔗
+                Rel
                 </div>
                 <CardTitle className="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                   Relaciones
@@ -149,7 +149,7 @@ export function DatabaseVisualization() {
             <CardHeader className="pb-4">
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center text-white text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  📋
+                con
                 </div>
                 <CardTitle className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
                   Constraints
@@ -185,15 +185,14 @@ export function DatabaseVisualization() {
             <CardHeader className="pb-4">
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center text-white text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  ⚡
+                  oñ
                 </div>
                 <CardTitle className="text-xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                   Optimización
                 </CardTitle>
               </div>
               <div className="bg-green-50 dark:bg-green-950/20 px-4 py-2 rounded-lg">
-                <span className="text-2xl font-bold text-green-600 dark:text-green-400">3NF</span>
-                <span className="text-sm text-green-700 dark:text-green-300 ml-2">Normalizada</span>
+               
               </div>
             </CardHeader>
             <CardContent>
@@ -207,7 +206,7 @@ export function DatabaseVisualization() {
                 </div>
                 <div className="flex items-center space-x-3 p-3 bg-emerald-50 dark:bg-emerald-950/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
                   <div className="w-3 h-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
-                  <span className="font-medium text-slate-700 dark:text-slate-300">Normalización 3NF</span>
+                  <span className="font-medium text-slate-700 dark:text-slate-300">Gestion de datos redundantes</span>
                 </div>
                 <div className="flex items-center space-x-3 p-3 bg-teal-50 dark:bg-teal-950/20 rounded-lg border border-teal-200 dark:border-teal-800">
                   <div className="w-3 h-3 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full"></div>

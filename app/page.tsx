@@ -16,9 +16,9 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
-                  Sistema de Gestión Empresarial
+                  BD EMPRESA TEXTIL - TELAS DE ENSUEÑO
                 </h1>
-                <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Base de Datos Integral</p>
+       
               </div>
             </div>
             <div className="hidden sm:flex items-center space-x-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-full">
@@ -40,17 +40,16 @@ export default function Home() {
         <div className="relative container mx-auto px-6 lg:px-8 text-center">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium mb-8 border border-blue-200 dark:border-blue-800">
             <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-            <span>Arquitectura de Base de Datos Empresarial</span>
+            <span>Arquitectura de Base de Datos </span>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-slate-100 dark:via-blue-100 dark:to-indigo-100 bg-clip-text text-transparent mb-6 leading-tight">
             Base de Datos para Sistema de
             <span className="block text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text">
-              Gestión Empresarial
+              Gestión Empresarial textil
             </span>
           </h2>
           <p className="text-xl lg:text-2xl text-slate-600 dark:text-slate-300 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Una base de datos completa y escalable diseñada para gestionar todos los aspectos críticos de una empresa: 
-            desde la información geográfica hasta la producción, inventario y análisis de ventas.
+            Una base de datos completa Y diseñada para gestionar 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a

@@ -267,7 +267,7 @@ export function DatabaseModules() {
           ))}
         </div>
 
-        {/* Summary Stats */}
+        {/* Summary Stats 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="text-center p-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-2xl border-2 border-blue-200 dark:border-blue-800">
             <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">10</div>
@@ -283,7 +283,7 @@ export function DatabaseModules() {
             <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">100%</div>
             <div className="text-slate-600 dark:text-slate-300 font-medium">Interconectado</div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </section>
   )

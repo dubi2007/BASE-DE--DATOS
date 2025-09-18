@@ -9,7 +9,7 @@ export function DatabaseOverview() {
       color: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-50 dark:bg-blue-950/20",
       borderColor: "border-blue-200 dark:border-blue-800",
-      icon: "🗂️"
+      icon: ""
     },
     { 
       label: "Tablas Totales", 
@@ -18,7 +18,7 @@ export function DatabaseOverview() {
       color: "from-green-500 to-green-600",
       bgColor: "bg-green-50 dark:bg-green-950/20",
       borderColor: "border-green-200 dark:border-green-800",
-      icon: "📊"
+      icon: ""
     },
     { 
       label: "Relaciones", 
@@ -27,7 +27,7 @@ export function DatabaseOverview() {
       color: "from-purple-500 to-purple-600",
       bgColor: "bg-purple-50 dark:bg-purple-950/20",
       borderColor: "border-purple-200 dark:border-purple-800",
-      icon: "🔗"
+      icon: ""
     },
    
   ]
@@ -36,25 +36,25 @@ export function DatabaseOverview() {
     {
       title: "Estructura Jerárquica",
       description: "Organización geográfica desde departamentos hasta distritos, permitiendo ubicación precisa de sucursales, clientes y proveedores.",
-      icon: "🌐",
+      icon: "",
       color: "from-blue-500 to-cyan-500"
     },
     {
       title: "Gestión Integral",
       description: "Control completo desde la materia prima hasta el producto final, incluyendo inventario, ventas y facturación.",
-      icon: "🔄",
+      icon: "",
       color: "from-green-500 to-emerald-500"
     },
     {
       title: "Trazabilidad Completa",
       description: "Seguimiento detallado de producción, calidad, asistencia de empleados y historial de cambios.",
-      icon: "📈",
+      icon: "",
       color: "from-purple-500 to-violet-500"
     },
     {
       title: "Flexibilidad",
       description: "Soporte para diferentes tipos de clientes (personas y empresas) y múltiples métodos de pago.",
-      icon: "🎯",
+      icon: "",
       color: "from-orange-500 to-red-500"
     }
   ]
@@ -78,7 +78,7 @@ export function DatabaseOverview() {
           </h3>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
             Un sistema integral que abarca desde la <span className="font-semibold text-blue-600 dark:text-blue-400">gestión geográfica</span> hasta el 
-            <span className="font-semibold text-green-600 dark:text-green-400"> control de producción</span> avanzado
+            <span className="font-semibold text-green-600 dark:text-green-400"> control de producción</span> 
           </p>
         </div>
 
