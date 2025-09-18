@@ -85,7 +85,7 @@ export default function Home() {
       <DatabaseVisualization />
 
 
-      // En tu componente Home, después de DatabaseVisualization:
+{/* En tu componente Home, después de DatabaseVisualization: */}
 <DatabaseExamples />
 
       {/* Footer */}
