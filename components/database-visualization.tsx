@@ -42,15 +42,7 @@ export function DatabaseVisualization() {
           <CardContent className="p-8">
             <div className="relative w-full h-[500px] lg:h-[600px] bg-gradient-to-br from-slate-50 to-purple-50/30 dark:from-slate-800 dark:to-purple-900/20 rounded-2xl flex items-center justify-center border-2 border-dashed border-purple-300 dark:border-purple-700 overflow-hidden group">
               {/* Loading state overlay */}
-              <div className="absolute inset-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm flex items-center justify-center z-10 group-hover:opacity-0 transition-opacity duration-500">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg mb-4 animate-pulse">
-                    🗂️
-                  </div>
-                  <p className="text-slate-600 dark:text-slate-400 font-medium">Diagrama Interactivo Cargando...</p>
-                  <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">Haz hover para previsualizar</p>
-                </div>
-              </div>
+            
               
               <iframe
                 allowFullScreen
