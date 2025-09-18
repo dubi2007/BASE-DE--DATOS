@@ -103,9 +103,7 @@ export function DatabaseVisualization() {
                 </a>
               </div>
               
-              <p className="text-center text-sm text-slate-500 dark:text-slate-400">
-                💡 <span className="font-medium">Tip:</span> Usa los botones para explorar la documentación completa o ver el diagrama en pantalla completa
-              </p>
+            
             </div>
           </CardContent>
         </Card>
