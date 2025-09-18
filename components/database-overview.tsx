@@ -5,7 +5,7 @@ export function DatabaseOverview() {
     { 
       label: "Módulos Principales", 
       value: "10", 
-      description: "Sistemas interconectados",
+      description: "Sistemas relacionales",
       color: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-50 dark:bg-blue-950/20",
       borderColor: "border-blue-200 dark:border-blue-800",
@@ -13,7 +13,7 @@ export function DatabaseOverview() {
     },
     { 
       label: "Tablas Totales", 
-      value: "35+", 
+      value: "35", 
       description: "Entidades de datos",
       color: "from-green-500 to-green-600",
       bgColor: "bg-green-50 dark:bg-green-950/20",
@@ -22,22 +22,14 @@ export function DatabaseOverview() {
     },
     { 
       label: "Relaciones", 
-      value: "40+", 
+      value: "40", 
       description: "Claves foráneas",
       color: "from-purple-500 to-purple-600",
       bgColor: "bg-purple-50 dark:bg-purple-950/20",
       borderColor: "border-purple-200 dark:border-purple-800",
       icon: "🔗"
     },
-    { 
-      label: "Funcionalidades", 
-      value: "8", 
-      description: "Áreas de negocio",
-      color: "from-orange-500 to-orange-600",
-      bgColor: "bg-orange-50 dark:bg-orange-950/20",
-      borderColor: "border-orange-200 dark:border-orange-800",
-      icon: "⚡"
-    },
+   
   ]
 
   const features = [
@@ -79,7 +71,7 @@ export function DatabaseOverview() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full text-sm font-medium mb-6 border border-slate-200 dark:border-slate-700">
             <span className="w-2 h-2 bg-slate-500 rounded-full"></span>
-            <span>Arquitectura Empresarial Completa</span>
+            <span>Arquitectura Empresa textil</span>
           </div>
           <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-slate-100 dark:via-blue-100 dark:to-indigo-100 bg-clip-text text-transparent mb-6">
             Resumen de la Base de Datos

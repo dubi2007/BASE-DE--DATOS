@@ -179,9 +179,7 @@ export function DatabaseModules() {
           <h3 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-slate-100 dark:via-blue-100 dark:to-indigo-100 bg-clip-text text-transparent mb-6">
             Módulos de la Base de Datos
           </h3>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Explora cada uno de los <span className="font-semibold text-blue-600 dark:text-blue-400">10 módulos especializados</span> que componen nuestro sistema integral de gestión empresarial
-          </p>
+         
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
