@@ -102,17 +102,7 @@ export default function Home() {
             <p className="text-slate-600 dark:text-slate-400 mb-2">
               Base de Datos diseñada para presentación académica
             </p>
-            <div className="flex items-center justify-center space-x-2">
-              <div className="flex items-center space-x-1">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span className="text-blue-600 dark:text-blue-400 font-semibold">10 módulos interconectados</span>
-              </div>
-              <span className="text-slate-400">•</span>
-              <div className="flex items-center space-x-1">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span className="text-green-600 dark:text-green-400 font-semibold">Arquitectura escalable</span>
-              </div>
-            </div>
+           
           </div>
         </div>
       </footer>
